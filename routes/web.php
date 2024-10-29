@@ -29,5 +29,5 @@ Route::get('/somar', function (Request $request) {
 Route::prefix('/people')->group(function () {
         Route::get('/list', [PeopleController::class, 'list']);
 
-        Route::post('/store', [PeopleController::class, 'store']);
+        Route::post('/store', [PeopleController::class, 'store']);//StorePeopleRequest
     });
